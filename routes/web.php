@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RealatorRentController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +25,6 @@ Route::get('/test', function () {
 Auth::routes();
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
-Route::get('/rent', [PizzaController::class, 'index' ])->name('rent');
+Route::get('/orders', [OrderController::class, 'index' ]);
+Route::get('/orders/create', [OrderController::class, 'create' ]);
+Route::get('/orders/{id}', [OrderController::class, 'show' ]);

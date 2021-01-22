@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PrivateDiningController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +24,14 @@ Route::get('/test', function () {
     return view('test');
 });
 
+
+
 Auth::routes();
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 Route::get('/orders', [OrderController::class, 'index' ]);
 Route::get('/orders/create', [OrderController::class, 'create' ]);
 Route::get('/orders/{id}', [OrderController::class, 'show' ]);
+Route::get('/private', [App\Http\Controllers\PrivateDiningController::class, 'index'])->name('private');
+Route::post('/private', [App\Http\Controllers\PrivateDiningController::class, 'store']);
+

@@ -35,4 +35,9 @@ class OrderController extends Controller
     return view('orders.create');
 }
 
+public function test(){
+    return view('private');
+}
+
+
 }

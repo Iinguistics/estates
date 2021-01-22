@@ -1,0 +1,20 @@
+a{
+    text-decoration: none !important;
+}
+
+div, p{
+    font-size: 1.1rem;
+}
+
+
+.test{
+    position: relative;
+}
+.test-item{
+    position: absolute;
+    top:50%;
+    left:25%;
+}
+.test:hover{
+    opacity: 0.9;
+}

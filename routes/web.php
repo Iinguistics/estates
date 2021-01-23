@@ -42,5 +42,5 @@ Route::delete('/events/{id}', [PrivateDiningController::class, 'destroy'])->name
 //public
 Route::get('/orders', [OrderController::class, 'index' ]);
 Route::get('/orders/create', [OrderController::class, 'create' ]);
-Route::post('/private', [App\Http\Controllers\PrivateDiningController::class, 'store']);
+Route::post('/private', [PrivateDiningController::class, 'store']);
 

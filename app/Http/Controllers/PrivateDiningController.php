@@ -31,6 +31,6 @@ class PrivateDiningController extends Controller
         $event->save();
         
         // use with() method to chain on to the redirect...session data
-        return redirect('/')->with('event-submit-message', 'Your event has been submited');
+        return redirect('/')->with('event-submit-message', 'Your event has been submitted');
     }
 }

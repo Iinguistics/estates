@@ -3,6 +3,7 @@
 @section('content')
 <div class="container my-5 text-center">
 <div class="mb-5 text-left">
+  <p class="bg-dark text-light">{{ session('event-submit-message') }}</p>
   <h3>Fork</h3>
   <p>Is the culinary vision of Chefs Evan and Sarah Rich. With over three decades of combined experience in San Francisco and New York high-end restaurants, the team brings with them a wealth of talent, knowledge of quality foods and wine, and connections with the best farms and purveyors.</p>
   </div>

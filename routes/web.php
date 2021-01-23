@@ -20,6 +20,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/private', function () {
+    return view('private');
+});
+
 Route::get('/test', function () {
     return view('test');
 });
@@ -28,10 +32,15 @@ Route::get('/test', function () {
 
 Auth::routes();
 
+//admin routes
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+
+Route::get('/events', [App\Http\Controllers\PrivateDiningController::class, 'index'])->name('events.index')->middleware('auth');
+Route::get('/events/{id}', [PrivateDiningController::class, 'show' ])->name('events.show')->middleware('auth');
+Route::delete('/events/{id}', [PrivateDiningController::class, 'destroy'])->name('events.destroy')->middleware('auth');
+
+//public
 Route::get('/orders', [OrderController::class, 'index' ]);
 Route::get('/orders/create', [OrderController::class, 'create' ]);
-Route::get('/orders/{id}', [OrderController::class, 'show' ]);
-Route::get('/private', [App\Http\Controllers\PrivateDiningController::class, 'index'])->name('private');
 Route::post('/private', [App\Http\Controllers\PrivateDiningController::class, 'store']);
 

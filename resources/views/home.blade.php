@@ -15,7 +15,7 @@
   </a>
     </div>
     <div class="col-sm mb-4">
-    <a href="{{ route('private') }}" class="test">
+    <a href="/private" class="test">
   <img src="/img/home/private-dining.jpg" alt="table" id='private-dining-img' class=" img-fluid" /><br />
   <div class="test-item text-dark font-weight-bold bg-light">Private Dining</div>
   </a>

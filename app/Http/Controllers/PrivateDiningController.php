@@ -8,7 +8,12 @@ use App\models\Event;
 class PrivateDiningController extends Controller
 {
     public function index(){
-        return view('private');
+
+        $events = Event::all();
+
+        return view('events.index', [
+            'events' => $events
+        ]);
     }
 
 
@@ -33,4 +38,23 @@ class PrivateDiningController extends Controller
         // use with() method to chain on to the redirect...session data
         return redirect('/')->with('event-submit-message', 'Your event has been submitted');
     }
+
+
+    public function show($id){
+        // use the $id variable to query the db for a record
+
+        $event = Event::findOrFail($id);
+        return view('events.show', ['event' => $event]);
+    }
+
+
+    public function destroy($id){
+        $event = Event::findOrFail($id);
+        $event->delete();
+
+        return redirect('/events')->with('order-destroy-message', 'Event has been deleted');
+    }
+
+
+
 }

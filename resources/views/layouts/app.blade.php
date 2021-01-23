@@ -69,6 +69,9 @@
                                     <a class="dropdown-item" href="{{ route('dashboard') }}">
                                         Dashboard
                                     </a>
+                                    <a class="dropdown-item" href="{{ route('events.index') }}">
+                                        Events
+                                    </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

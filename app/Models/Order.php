@@ -9,5 +9,9 @@ class Order extends Model
 {
     use HasFactory;
 
-    
+    // when saving to db this turns orders into json, 
+    // when getting this data from the db it turns to an array
+    protected $casts = [
+        'order' => 'array'
+    ];
 }

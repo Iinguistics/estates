@@ -2,12 +2,16 @@
 
 @section('content')
 <div class="container my-5 text-center">
-  <h1>Submitted Events:</h1>
-  @foreach($events as $event)
-  <a href="{{ route('events.show', $event->id) }}" >
-      {{ $order->name }} - {{ $event->date }} <br />
+  <h1>Submitted Order's:</h1>
+  <ol>
+  @foreach($orders as $order)
+    <li>
+    <a href="{{ route('orders.show', $order->id) }}" >
+      {{ $order->name }} - {{ $order->created_at }} <br />
   </a>
+    </li>
   @endforeach
+  </ol>
   <p class="bg-dark text-light mt-4">{{ session('order-destroy-message') }}</p>
 </div>
 

@@ -34,7 +34,10 @@ Route::get('/test', function () {
 
 
 
-Auth::routes();
+Auth::routes([
+    // to disable register page
+    'register' => false
+]);
 
 //admin routes
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');

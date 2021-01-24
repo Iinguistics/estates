@@ -30,7 +30,7 @@
   @csrf
    <div class="row">
        <div class="col-sm">
-       <label for="name" class="p-2">Your name:</label>
+       <label for="name" class="p-2">Name</label>
        <input type="text" name="name" id="name" class="form-control" required>
        </div>
 

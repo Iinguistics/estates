@@ -39,43 +39,43 @@
                 <h5 class="card-title">Lamb shank pot pie</h5>
                 <p class="card-text">lamb shank slow-cooked in housemade garlic + red wine sauce, served open face with mashed potatoes, marinated tomatoes, veggies and a salted-thyme pie.</p>
                 <label for="name" class="p-2">Order</label>
-                <input type="checkbox" name="order[]" id="name" class="form-control" value="chicken-cordon-bleu">
+                <input type="checkbox" name="order[]" id="name" class="form-control" value="lamb-shank-pot-pie">
             </div>
          </div>
        </div>
 
        <div class="col-sm">
        <div class="card m-auto" style="width: 18rem;">
-            <img src="/img/menu/chicken-cordon-bleu.jpg" class="card-img-top" alt="chicken">
+            <img src="/img/menu/pot-roast.jpg" class="card-img-top" alt="roast">
             <div class="card-body">
-                <h5 class="card-title">Chicken cordon bleu</h5>
-                <p class="card-text">Hand-breaded chicken breasts, topped with shaved beeler’s ranch smoked ham, melted swiss cheese and whole grain mustard cream sauce, served with red lake nation wild rice, almond + mushroom pilaf.</p>
+                <h5 class="card-title">Pot roast</h5>
+                <p class="card-text">Red skin potato mash, sautéed baby spinach, red wine sauce.</p>
                 <label for="name" class="p-2">Order</label>
-                <input type="checkbox" name="order[]" id="name" class="form-control" value="chicken-cordon-bleu">
+                <input type="checkbox" name="order[]" id="name" class="form-control" value="pot-roast">
             </div>
          </div>
        </div>
 
        <div class="col-sm">
        <div class="card m-auto" style="width: 18rem;">
-            <img src="/img/menu/chicken-cordon-bleu.jpg" class="card-img-top" alt="chicken">
+            <img src="/img/menu/ribs-n-fries.jpg" class="card-img-top" alt="ribs">
             <div class="card-body">
-                <h5 class="card-title">Chicken cordon bleu</h5>
-                <p class="card-text">Hand-breaded chicken breasts, topped with shaved beeler’s ranch smoked ham, melted swiss cheese and whole grain mustard cream sauce, served with red lake nation wild rice, almond + mushroom pilaf.</p>
+                <h5 class="card-title">Ribs & Fries</h5>
+                <p class="card-text">Tender st. louis style ribs, flash-fried until crispy, brushed with honey plum sauce, served with peanut sesame slaw.</p>
                 <label for="name" class="p-2">Order</label>
-                <input type="checkbox" name="order[]" id="name" class="form-control" value="chicken-cordon-bleu">
+                <input type="checkbox" name="order[]" id="name" class="form-control" value="ribs-n-fries">
             </div>
          </div>
        </div>
 
        <div class="col-sm">
        <div class="card m-auto" style="width: 18rem;">
-            <img src="/img/menu/chicken-cordon-bleu.jpg" class="card-img-top" alt="chicken">
+            <img src="/img/menu/chicken-parmesan.jpg" class="card-img-top" alt="chicken-parmesan">
             <div class="card-body">
-                <h5 class="card-title">Chicken cordon bleu</h5>
-                <p class="card-text">Hand-breaded chicken breasts, topped with shaved beeler’s ranch smoked ham, melted swiss cheese and whole grain mustard cream sauce, served with red lake nation wild rice, almond + mushroom pilaf.</p>
+                <h5 class="card-title">Chicken parmesan</h5>
+                <p class="card-text">Hand-breaded chicken breast, melted mozzarella, marinara sauce, fettuccine.</p>
                 <label for="name" class="p-2">Order</label>
-                <input type="checkbox" name="order[]" id="name" class="form-control" value="chicken-cordon-bleu">
+                <input type="checkbox" name="order[]" id="name" class="form-control" value="chicken-parmesan">
             </div>
          </div>
        </div>

@@ -66,11 +66,12 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('dashboard') }}">
-                                        Dashboard
-                                    </a>
+                                
                                     <a class="dropdown-item" href="{{ route('events.index') }}">
                                         Events
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('orders.index') }}">
+                                        Orders
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

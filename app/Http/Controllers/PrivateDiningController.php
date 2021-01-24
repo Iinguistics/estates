@@ -52,7 +52,7 @@ class PrivateDiningController extends Controller
         $event = Event::findOrFail($id);
         $event->delete();
 
-        return redirect('/events')->with('order-destroy-message', 'Event has been deleted');
+        return redirect('/events')->with('event-destroy-message', 'Event has been deleted');
     }
 
 

@@ -8,7 +8,7 @@
       {{ $event->name }} - {{ $event->date }} <br />
   </a>
   @endforeach
-  <p class="bg-dark text-light mt-4">{{ session('order-destroy-message') }}</p>
+  <p class="bg-dark text-light mt-4">{{ session('event-destroy-message') }}</p>
 </div>
 
 
